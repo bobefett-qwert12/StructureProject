@@ -12,3 +12,13 @@ void Controller :: start()
 {
     cout << "Welcome to the Data Structures App!" << endl;
 }
+
+void Controller :: usingNodes()
+{
+    Node<int> mine(5);
+    Node<string> wordHolder("words can be stored here");
+    cout << mine.getData() << endl;
+    cout << wordHolder.getData() << endl;
+    wordHolder.setData("sample text");
+    cout << wordHolder.getData() << endl;
+}
