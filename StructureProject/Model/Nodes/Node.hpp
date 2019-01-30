@@ -16,7 +16,7 @@ class Node
 {
 private:
     Type data;
-public :
+public:
     Node();
     Node(Type data);
     Type getData();
