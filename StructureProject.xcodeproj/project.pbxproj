@@ -38,6 +38,7 @@
 		8B94853D220206A0003C8A89 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		8BA328BA2209E1AC00546CA2 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		8BA328BB2209E1AC00546CA2 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		8BE7DF3C2211D60E00DDC774 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +130,7 @@
 				8B94853C22020678003C8A89 /* Array.hpp */,
 				8B525E2A220C858C00029AB7 /* List.hpp */,
 				8B525E2B220C93CD00029AB7 /* LinkedList.hpp */,
+				8BE7DF3C2211D60E00DDC774 /* Stack.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
