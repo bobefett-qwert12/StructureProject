@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8B3F722121FF5D9C00D76D4B /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F721F21FF5D9C00D76D4B /* Controller.cpp */; };
 		8B3F722321FF5EB100D76D4B /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F722221FF5EB100D76D4B /* Runner.cpp */; };
+		8B40E1EE2214775300B3E863 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E1EC2214775300B3E863 /* FileController.cpp */; };
+		8B40E1F12214799A00B3E863 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E1F02214799A00B3E863 /* CrimeData.cpp */; };
+		8B40E1F5221479F200B3E863 /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E1F4221479F200B3E863 /* Music.cpp */; };
 		8BA328BC2209E1AC00546CA2 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA328BA2209E1AC00546CA2 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,14 @@
 		8B3F722021FF5D9C00D76D4B /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		8B3F722221FF5EB100D76D4B /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		8B3F722421FF60CF00D76D4B /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		8B40E1EC2214775300B3E863 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
+		8B40E1ED2214775300B3E863 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
+		8B40E1EF2214795D00B3E863 /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		8B40E1F02214799A00B3E863 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
+		8B40E1F2221479A800B3E863 /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
+		8B40E1F3221479C400B3E863 /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
+		8B40E1F4221479F200B3E863 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
+		8B40E1F622147A0300B3E863 /* Music.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		8B525E2A220C858C00029AB7 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		8B525E2B220C93CD00029AB7 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		8B94853C22020678003C8A89 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
@@ -96,6 +107,8 @@
 				8B3F721F21FF5D9C00D76D4B /* Controller.cpp */,
 				8B3F722021FF5D9C00D76D4B /* Controller.hpp */,
 				8B3F722221FF5EB100D76D4B /* Runner.cpp */,
+				8B40E1EC2214775300B3E863 /* FileController.cpp */,
+				8B40E1ED2214775300B3E863 /* FileController.hpp */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,6 +125,12 @@
 		8B3F721C21FF5BF500D76D4B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8B40E1F622147A0300B3E863 /* Music.hpp */,
+				8B40E1F4221479F200B3E863 /* Music.cpp */,
+				8B40E1F3221479C400B3E863 /* music.csv */,
+				8B40E1F2221479A800B3E863 /* CrimeData.hpp */,
+				8B40E1F02214799A00B3E863 /* CrimeData.cpp */,
+				8B40E1EF2214795D00B3E863 /* crime.csv */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -203,8 +222,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BA328BC2209E1AC00546CA2 /* Timer.cpp in Sources */,
+				8B40E1F12214799A00B3E863 /* CrimeData.cpp in Sources */,
 				8B3F722121FF5D9C00D76D4B /* Controller.cpp in Sources */,
+				8B40E1F5221479F200B3E863 /* Music.cpp in Sources */,
 				8B3F722321FF5EB100D76D4B /* Runner.cpp in Sources */,
+				8B40E1EE2214775300B3E863 /* FileController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
