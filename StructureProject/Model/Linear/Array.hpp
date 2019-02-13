@@ -105,10 +105,10 @@ Type Array<Type> :: getFromIndex(int index)
 }
 
 template <class Type>
-void Array<Type> :: setAtIndex(int pos, Type item)
+void Array<Type> :: setAtIndex(int index, Type item)
 {
     assert(index >= 0 && index < size);
-    internalArray[pos] = item;
+    internalArray[index] = item;
 }
 
 #endif /* Array_hpp */

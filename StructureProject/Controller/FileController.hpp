@@ -29,7 +29,7 @@ public:
     static LinkedList<CrimeData> readDataToList(string filename);
     //static BinarySearchTree<CrimeData> readDataToTree<string filename);
     static vector<Music> musicDataToVector(string filename);
-    static Array<Music> musicDataToVector(string filename);
+    static Array<Music> musicDataToArray(string filename);
     static LinkedList<Music> musicDataToList(string filename);
     //static BinarySearchTree<Music> musicDataToTree(string filename);
 };

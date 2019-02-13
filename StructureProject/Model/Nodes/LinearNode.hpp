@@ -44,7 +44,7 @@ LinearNode<Type> :: LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(
 template <class Type>
 LinearNode<Type> * LinearNode<Type> :: getNextNode()
 {
-    return this->next;pd
+    return this->next;
 }
 
 template <class Type>
@@ -53,4 +53,4 @@ void LinearNode<Type> :: setNextNode(LinearNode<Type> * next)
     this->next = next;
 }
 
-#endif /* LinearNode_h */
+#endif /* LinearNode_hpp */

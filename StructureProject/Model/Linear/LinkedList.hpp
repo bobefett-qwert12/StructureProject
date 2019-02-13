@@ -41,7 +41,7 @@ LinkedList<Type> :: LinkedList()
 }
 
 template <class Type>
-LinkedList :: ~LinkedList()
+LinkedList<Type> :: ~LinkedList()
 {
     LinearNode<Type> * destroyStructure = front;
     while (front != nullptr)
