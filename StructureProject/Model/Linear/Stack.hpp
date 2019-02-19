@@ -12,7 +12,7 @@
 #include "LinkedList.hpp"
 
 template <class Type>
-class Stack : public Linkedlist<Type>
+class Stack : public LinkedList<Type>
 {
 public:
     Stack();
@@ -35,7 +35,7 @@ Stack<Type> :: Stack() : LinkedList<Type>()
 template <class Type>
 Stack<Type> :: ~Stack()
 {
-    while(thie->size > 0)
+    while(this->size > 0)
     {
         pop();
     }
@@ -71,7 +71,7 @@ void Stack<Type> :: addAtIndex(int index, Type data)
 }
 
 template <class Type>
-Type Stack<Type> :: pop();
+Type Stack<Type> :: pop()
 {
     assert(this->size > 0);
     Type removed = this->front->getData();

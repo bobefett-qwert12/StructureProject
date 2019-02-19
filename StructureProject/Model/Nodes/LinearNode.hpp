@@ -10,6 +10,7 @@
 #define LinearNode_hpp
 
 #include <assert.h>
+#include "Node.hpp"
 
 template <class Type>
 class LinearNode
@@ -17,9 +18,10 @@ class LinearNode
 private:
     LinearNode<Type> * next;
 public:
+    LinearNode();
     LinearNode(Type data);
     LinearNode(Type data, LinearNode<Type> * next);
-    LinearNode<Type> * getNextNode();
+    LinearNode<Type> * getNext();
     void setNextNode(LinearNode<Type> * next);
 };
 
@@ -42,7 +44,7 @@ LinearNode<Type> :: LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(
 }
 
 template <class Type>
-LinearNode<Type> * LinearNode<Type> :: getNextNode()
+LinearNode<Type> * LinearNode<Type> :: getNext()
 {
     return this->next;
 }

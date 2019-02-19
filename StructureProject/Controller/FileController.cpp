@@ -7,6 +7,7 @@
 //
 
 #include "FileController.hpp"
+#include "/Users/rper7060/Documents/C++Workspace/StructureProject/StructureProject/Model/Linear/LinkedList.hpp"
 
 LinkedList<Music> FileController :: musicDataToList(string filename)
 {
@@ -18,7 +19,7 @@ LinkedList<Music> FileController :: musicDataToList(string filename)
     {
         while(!dataFile.eof())
         {
-            getline(dataFile, currentCSVLine, "\r");
+            getline(dataFile, currentCSVLine, '\r');
             if (rowCount != 0)
             {
                 if (currentCSVLine.length() != 0)
@@ -48,7 +49,7 @@ LinkedList<CrimeData> FileController :: readDataToList(string filename)
     {
         while(!dataFile.eof())
         {
-            getline(dataFile, currentCSVLine, "\r");
+            getline(dataFile, currentCSVLine, '\r');
             if (rowCount != 0)
             {
                 if (currentCSVLine.length() != 0)

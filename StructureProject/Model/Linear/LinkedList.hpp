@@ -46,7 +46,7 @@ LinkedList<Type> :: ~LinkedList()
     LinearNode<Type> * destroyStructure = front;
     while (front != nullptr)
     {
-        front = destroyStructure->getNextNode();
+        front = destroyStructure->getNext();
         delete destroyStructure;
         destroyStructure = front;
     }
@@ -91,7 +91,7 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
             for(int position = 0; position < index; position++)
             {
                 previous = current;
-                current = current->getNextNode();
+                current = current->getNext();
             }
             previous->setNextNode(toBeAdded);
             toBeAdded->setNextNode(current);
@@ -103,12 +103,12 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
 template <class Type>
 Type LinkedList<Type> :: getFromIndex(int index)
 {
-    assert(index >= 0 && index < this->size;);
+    assert(index >= 0 && index < this->size);
     Type data;
-    LinearNode<Type> * crrent = front;
+    LinearNode<Type> * current = front;
     for(int position = 0; position < index; position++)
     {
-        current = current->getNextNode();
+        current = current->getNext();
     }
     data = current->getData();
     return data;
@@ -119,20 +119,20 @@ Type LinkedList<Type> :: remove(int index)
 {
     assert(index >= 0 && index < this->size);
     LinearNode<Type> * current = front;
-    LinearNode<Type> * toBeRemoved; = nullptr;
+    LinearNode<Type> * toBeRemoved = nullptr;
     LinearNode<Type> * previous = nullptr;
     Type removedData;
     if(index == 0)
     {
         toBeRemoved = front;
-        this->front = this->front->betNextNode();
+        this->front = this->front->getNext();
     }
     else
     {
         for(int position = 0; position < index; position++)
         {
             previous = current;
-            current = current->getNextNode();
+            current = current->getNext();
         }
         toBeRemoved = current;
         if(index == this->size - 1)
@@ -142,7 +142,7 @@ Type LinkedList<Type> :: remove(int index)
         }
         else
         {
-            current = toBeRemoved->getNextNode();
+            current = toBeRemoved->getNext();
             previous->setNextNode(current);
         }
     }
