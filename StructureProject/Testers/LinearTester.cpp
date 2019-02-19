@@ -23,4 +23,21 @@ void LinearTester :: testVsSTL()
     crimeTimerSTL.displayInformation();
     crimeTimerOOP.displayInformation();
     cout << "a Difference of: " << crimeTimerOOP.getTimeInMicroseconds() - crimeTimerSTL.getTimeInMicroseconds() << " microseconds" << endl;
+    
+    musicSTL.startTimer();
+    vector<Music> tunez = FileController :: musicDataToVector("/Users/rper7060/Documents/C++Workspace/StructureProject/StructureProject/Resources/music.csv");
+    musicSTL.stopTimer();
+    
+    musicOOP.startTimer();
+    LinkedList<Music> musicList = FileController :: musicDataToList("/Users/rper7060/Documents/C++Workspace/StructureProject/StructureProject/Resources/music.csv");
+    musicOOP.stopTimer();
+    
+    musicSTL.displayInformation();
+    musicOOP.displayInformation();
+    cout << "a Difference of: " << musicOOP.getTimeInMicroseconds() - musicSTL.getTimeInMicroseconds() << " microseconds" << endl;
+    
+    crimeTimerOOP.resetTimer();
+    crimeTimerSTL.resetTimer();
+    musicOOP.resetTimer();
+    musicSTL.resetTimer();
 };
