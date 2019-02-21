@@ -29,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8B14035D221EF44A00425425 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		8B3F720F21FF5B5900D76D4B /* StructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3F721D21FF5D5A00D76D4B /* Linear_Node.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Linear_Node.png; sourceTree = "<group>"; };
 		8B3F721E21FF5D6300D76D4B /* Node.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Node.png; sourceTree = "<group>"; };
@@ -153,6 +154,7 @@
 			children = (
 				8B3F722421FF60CF00D76D4B /* Node.hpp */,
 				8B94853D220206A0003C8A89 /* LinearNode.hpp */,
+				8B14035D221EF44A00425425 /* DoubleNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
