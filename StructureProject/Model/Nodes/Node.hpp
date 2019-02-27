@@ -14,13 +14,13 @@
 template <class Type>
 class Node
 {
-private:
+protected:
     Type data;
 public:
     Node();
     Node(Type data);
-    Type getData();
-    void setData(Type data);
+    virtual Type getData();
+    virtual void setData(Type data);
 };
 
 //Template definitions

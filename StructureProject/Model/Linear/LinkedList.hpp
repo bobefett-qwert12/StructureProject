@@ -10,6 +10,7 @@
 #define LinkedList_hpp
 
 #include "List.hpp"
+#include "../Nodes/LinearNode.hpp"
 using namespace std;
 
 template <class Type>

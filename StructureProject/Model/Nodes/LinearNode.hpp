@@ -15,7 +15,7 @@
 template <class Type>
 class LinearNode
 {
-private:
+protected:
     LinearNode<Type> * next;
 public:
     LinearNode();
@@ -28,8 +28,10 @@ public:
 //Template definitions
 
 template <class Type>
-LinearNode<Type> :: LinearNode() : Node()
-{}
+LinearNode<Type> :: LinearNode() : Node<Type>()
+{
+    this->next = nullptr;
+}
 
 template <class Type>
 LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data)
