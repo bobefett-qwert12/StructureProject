@@ -31,6 +31,7 @@
 /* Begin PBXFileReference section */
 		8B14035D221EF44A00425425 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		8B14035E221EF80C00425425 /* CirclarList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CirclarList.hpp; sourceTree = "<group>"; };
+		8B252CBF222D881500F44FD0 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		8B3F720F21FF5B5900D76D4B /* StructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3F721D21FF5D5A00D76D4B /* Linear_Node.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Linear_Node.png; sourceTree = "<group>"; };
 		8B3F721E21FF5D6300D76D4B /* Node.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Node.png; sourceTree = "<group>"; };
@@ -69,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B252CBE222D87E500F44FD0 /* NonLinear */ = {
+			isa = PBXGroup;
+			children = (
+				8B252CBF222D881500F44FD0 /* Graph.hpp */,
+			);
+			path = NonLinear;
+			sourceTree = "<group>";
+		};
 		8B3F720621FF5B5800D76D4B = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +131,7 @@
 		8B3F721B21FF5BEE00D76D4B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B252CBE222D87E500F44FD0 /* NonLinear */,
 				8B9485382201F0D1003C8A89 /* Linear */,
 				8B9485372201F0B8003C8A89 /* Nodes */,
 			);
