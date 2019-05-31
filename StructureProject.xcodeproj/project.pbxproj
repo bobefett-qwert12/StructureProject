@@ -13,6 +13,7 @@
 		8B40E1F12214799A00B3E863 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E1F02214799A00B3E863 /* CrimeData.cpp */; };
 		8B40E1F5221479F200B3E863 /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E1F4221479F200B3E863 /* Music.cpp */; };
 		8B40E1FA22147E6300B3E863 /* LinearTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E1F822147E6300B3E863 /* LinearTester.cpp */; };
+		8B71985A22661CC700086DCD /* BinaryTreeTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B71985822661CC700086DCD /* BinaryTreeTester.cpp */; };
 		8BA328BC2209E1AC00546CA2 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA328BA2209E1AC00546CA2 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
@@ -51,10 +52,15 @@
 		8B40E1F922147E6300B3E863 /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
 		8B525E2A220C858C00029AB7 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		8B525E2B220C93CD00029AB7 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		8B71985822661CC700086DCD /* BinaryTreeTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeTester.cpp; sourceTree = "<group>"; };
+		8B71985922661CC700086DCD /* BinaryTreeTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeTester.hpp; sourceTree = "<group>"; };
+		8B71985B22661DA300086DCD /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
+		8B71985C22661E8F00086DCD /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		8B94853C22020678003C8A89 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		8B94853D220206A0003C8A89 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		8BA328BA2209E1AC00546CA2 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		8BA328BB2209E1AC00546CA2 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		8BCCA25E2260E23B00A39768 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
 		8BE7DF3C2211D60E00DDC774 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		8BE7DF3D2211D96C00DDC774 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				8B252CBF222D881500F44FD0 /* Graph.hpp */,
+				8B71985B22661DA300086DCD /* Tree.hpp */,
+				8B71985C22661E8F00086DCD /* BinarySearchTree.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
@@ -156,6 +164,8 @@
 			children = (
 				8B40E1F822147E6300B3E863 /* LinearTester.cpp */,
 				8B40E1F922147E6300B3E863 /* LinearTester.hpp */,
+				8B71985822661CC700086DCD /* BinaryTreeTester.cpp */,
+				8B71985922661CC700086DCD /* BinaryTreeTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -166,6 +176,7 @@
 				8B3F722421FF60CF00D76D4B /* Node.hpp */,
 				8B94853D220206A0003C8A89 /* LinearNode.hpp */,
 				8B14035D221EF44A00425425 /* DoubleNode.hpp */,
+				8BCCA25E2260E23B00A39768 /* BinaryTreeNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -249,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BA328BC2209E1AC00546CA2 /* Timer.cpp in Sources */,
+				8B71985A22661CC700086DCD /* BinaryTreeTester.cpp in Sources */,
 				8B40E1F12214799A00B3E863 /* CrimeData.cpp in Sources */,
 				8B3F722121FF5D9C00D76D4B /* Controller.cpp in Sources */,
 				8B40E1F5221479F200B3E863 /* Music.cpp in Sources */,

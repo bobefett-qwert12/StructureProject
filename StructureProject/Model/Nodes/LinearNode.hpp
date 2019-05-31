@@ -13,7 +13,7 @@
 #include "Node.hpp"
 
 template <class Type>
-class LinearNode
+class LinearNode:public Node<Type>
 {
 protected:
     LinearNode<Type> * next;

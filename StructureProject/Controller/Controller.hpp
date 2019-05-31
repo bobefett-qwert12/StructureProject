@@ -12,8 +12,10 @@
 #include <iostream>
 #include "../Model/Nodes/Node.hpp"
 #include "../Model/Nodes/LinearNode.hpp"
+#include "../Model/NonLinear/BinarySearchTree.hpp"
 #include "FileController.hpp"
 #include "../Testers/LinearTester.hpp"
+#include "../Testers/BinaryTreeTester.hpp"
 
 using namespace std;
 
@@ -22,6 +24,7 @@ class Controller
 private:
     void usingNodes();
     void testLinear();
+    void testBinaryTree();
 public:
     void start();
 };

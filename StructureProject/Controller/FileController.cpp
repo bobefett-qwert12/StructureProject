@@ -7,7 +7,7 @@
 //
 
 #include "FileController.hpp"
-#include "/Users/rper7060/Documents/C++Workspace/StructureProject/StructureProject/Model/Linear/LinkedList.hpp"
+#include "/Users/rper7060/Documents/StructureProject/StructureProject/Model/Linear/LinkedList.hpp"
 
 LinkedList<Music> FileController :: musicDataToList(string filename)
 {
@@ -56,6 +56,66 @@ LinkedList<CrimeData> FileController :: readDataToList(string filename)
                 {
                     CrimeData row(currentCSVLine);
                     crimeList.add(row);
+                }
+            }
+            rowCount++;
+        }
+        dataFile.close();
+    }
+    else
+    {
+        cerr << "NO FILE" << endl;
+    }
+    return crimeList;
+}
+
+vector<Music> FileController :: musicDataToVector(string filename)
+{
+    vector<Music> musicList;
+    string currentCSVLine;
+    int rowCount = 0;
+    ifstream dataFile(filename);
+    if (dataFile.is_open())
+    {
+        while(!dataFile.eof())
+        {
+            getline(dataFile, currentCSVLine, '\r');
+            if (rowCount != 0)
+            {
+                if (currentCSVLine.length() != 0)
+                {
+                    Music row(currentCSVLine);
+                    musicList.push_back(row);
+                }
+            }
+            rowCount++;
+        }
+        dataFile.close();
+    }
+    else
+    {
+        cerr << "NO FILE" << endl;
+    }
+    return musicList;
+}
+
+vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
+{
+    vector<CrimeData> crimeList;
+    string currentCSVLine;
+    int rowCount = 0;
+    ifstream dataFile(filename);
+    if (dataFile.is_open())
+    {
+        while(!dataFile.eof())
+        {
+            getline(dataFile, currentCSVLine, '\r');
+            if (rowCount != 0)
+            {
+                if (currentCSVLine.length() != 0)
+                {
+                    CrimeData row(currentCSVLine);
+                    crimeList.push_back(row);
                 }
             }
             rowCount++;

@@ -12,6 +12,7 @@ void Controller :: start()
 {
     cout << "Welcome to the Data Structures App!" << endl;
     testLinear();
+    //testBinaryTree();
 }
 
 void Controller :: usingNodes()
@@ -29,3 +30,9 @@ void Controller :: testLinear()
     LinearTester lookieHere;
     lookieHere.testVsSTL();
 }
+
+//void Controller :: testBinaryTree()
+//{
+//    BinaryTreeTester lookieHere;
+//    lookieHere.treeStuff();
+//}
