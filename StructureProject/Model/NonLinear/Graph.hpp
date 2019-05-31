@@ -21,7 +21,7 @@ private:
     static const int MAXIMUM = 50;
     bool adjacencyMatrix [MAXIMUM][MAXIMUM];
     int weightCostMatrix [MAXIMUM][MAXIMUM];
-    Type graphDat[MAXIMUM];
+    Type graphData[MAXIMUM];
     int vertexCount;
     void depthFirstTraversal(Graph<Type> & graph, int vertex, bool markedVertices[]);
 public:
@@ -51,6 +51,11 @@ template <class Type>
 Graph<Type> :: Graph()
 {
     this->vertexCount = 0;
+    for(int index = 0; index < MAXIMUM; index++)
+    {
+        int * row = weightCostMatrix[index];
+        sdt::fill_n(row, MAXIMUM, 0);
+    }
 }
 
 template <class Type>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B09613A22A180700089315C /* GraphTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B09613822A180700089315C /* GraphTester.cpp */; };
 		8B3F722121FF5D9C00D76D4B /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F721F21FF5D9C00D76D4B /* Controller.cpp */; };
 		8B3F722321FF5EB100D76D4B /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F722221FF5EB100D76D4B /* Runner.cpp */; };
 		8B40E1EE2214775300B3E863 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B40E1EC2214775300B3E863 /* FileController.cpp */; };
@@ -30,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8B09613822A180700089315C /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
+		8B09613922A180700089315C /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
 		8B14035D221EF44A00425425 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		8B14035E221EF80C00425425 /* CirclarList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CirclarList.hpp; sourceTree = "<group>"; };
 		8B252CBF222D881500F44FD0 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 				8B40E1F922147E6300B3E863 /* LinearTester.hpp */,
 				8B71985822661CC700086DCD /* BinaryTreeTester.cpp */,
 				8B71985922661CC700086DCD /* BinaryTreeTester.hpp */,
+				8B09613822A180700089315C /* GraphTester.cpp */,
+				8B09613922A180700089315C /* GraphTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				8B40E1F12214799A00B3E863 /* CrimeData.cpp in Sources */,
 				8B3F722121FF5D9C00D76D4B /* Controller.cpp in Sources */,
 				8B40E1F5221479F200B3E863 /* Music.cpp in Sources */,
+				8B09613A22A180700089315C /* GraphTester.cpp in Sources */,
 				8B3F722321FF5EB100D76D4B /* Runner.cpp in Sources */,
 				8B40E1EE2214775300B3E863 /* FileController.cpp in Sources */,
 				8B40E1FA22147E6300B3E863 /* LinearTester.cpp in Sources */,
